@@ -1,4 +1,5 @@
-﻿@model IEnumerable<WordsTranslater.Domain.Models.Word>
+﻿@model IEnumerable<WordsTranslater.Domain.ViewModel.WordViewModel>
+
 
 <h1>Таблица <Слова></h1>
 <h6>Кол-во записей в таблице : @Model.Count()</h6>
@@ -6,7 +7,7 @@
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-12 text-end">
-            <a asp-controller="Word" asp-action="GetWords" class="btn btn-primary">
+            <a asp-controller="Word" asp-action="Create" class="btn btn-primary">
                <i class="bi bi-plus-circle"></i> &nbsp; Добавить слово
             </a>
         </div>
@@ -37,7 +38,7 @@
                             <td width:auto>
                             @word.DstWord
                             </td>
-                           <td width:auto>
+                           <td width = "20%">
                                 <div class="w-75 btn-group" role="group">
                                     <a asp-controller="Word" asp-action="Edit" asp-route-id="@word.WordId"
                             class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i>Редактировать</a>

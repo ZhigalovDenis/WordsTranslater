@@ -1,0 +1,31 @@
+﻿@model WordsTranslater.Domain.ViewModel.WordViewModel
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Редактировать запись в таблице "Слова"</h2>
+			<hr />
+		</div>
+			<input asp-for="WordId" class="form-control" type="hidden"/>
+		<div class="mb-3">
+			<label asp-for="SrcWord"></label>
+			<input asp-for="SrcWord" class="form-control" />
+			<span asp-validation-for="SrcWord" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="DstWord"></label>
+			<input asp-for="DstWord" class="form-control" />
+			<span asp-validation-for="DstWord" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:150px">Применить</button>
+		<a asp-controller="Word" asp-action="GetWords" class="btn btn-secondary" style="width:150px">
+			Назад
+		</a>
+	</div>
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+	}

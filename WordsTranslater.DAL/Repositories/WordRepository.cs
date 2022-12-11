@@ -8,7 +8,7 @@ using WordsTranslater.Domain.Models;
 
 namespace WordsTranslater.DAL.Repositories
 {
-    public class WordRepository : IWordRepository//IBaseRepository<Word, int>
+    public class WordRepository : IWordRepository
     {
         private readonly ApplicationDbContext _db;
         public WordRepository(ApplicationDbContext db)
@@ -32,7 +32,7 @@ namespace WordsTranslater.DAL.Repositories
 
         public async Task<IEnumerable<Word>> GetAll()
         {
-            return await _db.Words.ToListAsync();
+            return await _db.Words.OrderBy(x => x.SrcWord).ToListAsync();
         }
 
         public async Task<Word> GetById(int id)
