@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{190C57FB-6AC0-491E-AD34-0FC63FC1BF43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsTranslater.Domain", "WordsTranslater.Domain\WordsTranslater.Domain.csproj", "{5926C5A4-C93A-4BA0-95DA-53060A47D36E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsTranslater", "WordsTranslater\WordsTranslater.csproj", "{46714B87-7DF9-4271-A847-0A2ECDC23FF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{09360B81-8452-4BBA-9059-C13F7BC233D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsTranslater.DAL", "WordsTranslater.DAL\WordsTranslater.DAL.csproj", "{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6EAC3C8C-D445-48FE-8469-67F6D1219998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsTranslater.Service", "WordsTranslater.Service\WordsTranslater.Service.csproj", "{542685F8-7593-40BC-81BB-6539988175CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5926C5A4-C93A-4BA0-95DA-53060A47D36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5926C5A4-C93A-4BA0-95DA-53060A47D36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5926C5A4-C93A-4BA0-95DA-53060A47D36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5926C5A4-C93A-4BA0-95DA-53060A47D36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46714B87-7DF9-4271-A847-0A2ECDC23FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46714B87-7DF9-4271-A847-0A2ECDC23FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46714B87-7DF9-4271-A847-0A2ECDC23FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46714B87-7DF9-4271-A847-0A2ECDC23FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542685F8-7593-40BC-81BB-6539988175CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542685F8-7593-40BC-81BB-6539988175CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542685F8-7593-40BC-81BB-6539988175CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542685F8-7593-40BC-81BB-6539988175CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5926C5A4-C93A-4BA0-95DA-53060A47D36E} = {190C57FB-6AC0-491E-AD34-0FC63FC1BF43}
+		{1F6F4D2F-2680-46F1-A9FD-50B38DD6AF4E} = {09360B81-8452-4BBA-9059-C13F7BC233D0}
+		{542685F8-7593-40BC-81BB-6539988175CD} = {6EAC3C8C-D445-48FE-8469-67F6D1219998}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ECFDA35-47DA-4219-9953-B13E84017149}
+	EndGlobalSection
+EndGlobal
