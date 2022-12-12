@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using WordsTranslater.DAL.Repositories;
 using WordsTranslater.Domain.Models;
@@ -12,17 +13,30 @@ namespace WordsTranslater.Controllers
     {
         private readonly IWordService _wordService;
         private readonly ITranslateService _translateService;
+		public string translateWord = "";
         public WordController(IWordService wordService, ITranslateService translateService)
         {
             _wordService = wordService;
             _translateService = translateService;
         }
+		
+
 
 		[HttpGet]
-		public async Task<IActionResult> TranslateWord(string word)
+		public async Task<IActionResult> TranslateWord()
 		{
+			var response = await _translateService.Translate("");
+			return View();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> TranslateWord(WordViewModel wordViewModel)
+		{
+			var word = wordViewModel.TranslateWord;
 			var response = await _translateService.Translate(word);
-			return View(response.Data);
+			translateWord = response.Data.TranslateWord;
+			ViewBag.Word = translateWord;
+			return View();
 		}
 
 		[HttpGet]

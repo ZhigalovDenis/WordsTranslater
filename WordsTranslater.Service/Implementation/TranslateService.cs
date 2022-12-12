@@ -13,14 +13,6 @@ namespace WordsTranslater.Service.Implementation
 {
     public class TranslateService : ITranslateService
 	{
-		private readonly ITranslateService _translateService;
-
-		public TranslateService(ITranslateService translateService) 
-		{ 
-
-			_translateService = translateService;
-		}
-
 		TranslateRUtoEN translateRUtoEN = TranslateRUtoEN.getInstance();
 
 		public async Task<IBaseResponse<WordViewModel>> Translate(string word)

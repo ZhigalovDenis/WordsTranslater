@@ -15,7 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql
 //builder.Services.AddScoped<IBaseRepository<Word,int>, WordRepository>();
 builder.Services.AddScoped<IWordRepository, WordRepository>();
 builder.Services.AddScoped<IWordService, WordService>();
-builder.Services.AddScoped<ITranslateService, TranslateService>();
+builder.Services.AddTransient<ITranslateService, TranslateService>();
 
 
 

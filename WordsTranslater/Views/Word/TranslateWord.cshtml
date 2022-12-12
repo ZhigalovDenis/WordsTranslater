@@ -1,0 +1,21 @@
+﻿@model WordsTranslater.Domain.ViewModel.WordViewModel
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="mb-3">
+			<label asp-for="TranslateWord"></label>
+			<input asp-for="TranslateWord" class="form-control" />
+			<span asp-validation-for="TranslateWord" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:150px">Перевести</button>
+		<a asp-controller="Word" asp-action="Create" class="btn btn-secondary" style="width:150px">
+			Назад
+		</a>
+	</div>
+</form>
+
+<div class="mb-3">
+ <h4>
+	 Переведенное слово : @ViewBag.Word
+ </h4>
+</div>
