@@ -3,6 +3,7 @@ using System;
 using WordsTranslater.DAL.Repositories;
 using WordsTranslater.Domain.Models;
 using WordsTranslater.Domain.ViewModel;
+using WordsTranslater.Service.Implementation;
 using WordsTranslater.Service.Interfaces;
 
 namespace WordsTranslater.Controllers
@@ -10,11 +11,21 @@ namespace WordsTranslater.Controllers
     public class WordController : Controller
     {
         private readonly IWordService _wordService;
-        public WordController(IWordService wordService)
+        private readonly ITranslateService _translateService;
+        public WordController(IWordService wordService, ITranslateService translateService)
         {
             _wordService = wordService;
+            _translateService = translateService;
         }
-        [HttpGet]
+
+		[HttpGet]
+		public async Task<IActionResult> TranslateWord(string word)
+		{
+			var response = await _translateService.Translate(word);
+			return View(response.Data);
+		}
+
+		[HttpGet]
         public async Task<IActionResult> GetWords()
         {
             var response = await _wordService.GetWords();

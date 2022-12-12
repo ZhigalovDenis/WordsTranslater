@@ -19,5 +19,7 @@ namespace WordsTranslater.Domain.ViewModel
 		[Required(ErrorMessage = "Поле <Оригинал> пустое, заполните!!!")]
 		[DisplayName("Перевод")]
 		public string? DstWord { get; set; }
-    }
+
+		public string TranslateWord { get; set; }
+	}
 }

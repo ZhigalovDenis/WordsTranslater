@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsTranslater.DAL", "Word
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6EAC3C8C-D445-48FE-8469-67F6D1219998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsTranslater.Service", "WordsTranslater.Service\WordsTranslater.Service.csproj", "{542685F8-7593-40BC-81BB-6539988175CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsTranslater.Service", "WordsTranslater.Service\WordsTranslater.Service.csproj", "{542685F8-7593-40BC-81BB-6539988175CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{4F72DAB4-5DA8-4020-95BE-FA3C8E60281A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{542685F8-7593-40BC-81BB-6539988175CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{542685F8-7593-40BC-81BB-6539988175CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{542685F8-7593-40BC-81BB-6539988175CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F72DAB4-5DA8-4020-95BE-FA3C8E60281A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F72DAB4-5DA8-4020-95BE-FA3C8E60281A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F72DAB4-5DA8-4020-95BE-FA3C8E60281A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F72DAB4-5DA8-4020-95BE-FA3C8E60281A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
